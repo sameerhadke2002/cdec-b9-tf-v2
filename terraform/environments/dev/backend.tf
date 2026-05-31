@@ -1,10 +1,8 @@
 
 terraform {
-  backend "s3" {
-    bucket  = "demo-newbucket-terraform"
-    key     = "eks-platform/dev/terraform.tfstate"
-    region  = "eu-west-1"
-    encrypt = true
-    # profile = "terraform-sessions"
-  }
+backend "s3" {
+bucket = "sameer-terraform-state2"
+key    = "terraform/dev.tfstate"
+region = "ap-south-1"
+}
 }
